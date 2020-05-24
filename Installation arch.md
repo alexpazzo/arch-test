@@ -64,9 +64,10 @@ root@archiso# hwclock --systohc # generate adjtime
 
 # Set locale
 ```console
-root@archiso# vim /etc/locale.conf # -> LANG=en_US.UTF-8
+root@archiso# vim /etc/locale.gen # -> uncomment en_US.UTF-8
 root@archiso# locale-gen
 root@archiso# vim /etc/vconsole.conf # -> KEYMAP=it non se funziona
+root@archiso# vim /etc/locale.conf # -> LANG=en_US.UTF-8
 ```
 
 # Network configuration
